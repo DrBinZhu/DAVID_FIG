@@ -1,7 +1,10 @@
 # Tips: only English in file path
 
+library(ggplot2)
+library(scatterpie)
+library(stringr)
 
-rm(list=ls())
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 
 # Read parameters
 parameter <- read.csv('set parameters.csv', row.names =1)
@@ -11,10 +14,6 @@ fc <- parameter[2,1]
 p_threshold <- parameter[3,1]
 p_threshold_path <- parameter[4,1]
 pie_radius <- parameter[5,1]
-
-library(stringr)
-
-setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 
 # Read DAVID info
 FILE <- list.files(pattern = '.txt')
@@ -77,9 +76,6 @@ data3=as.data.frame(read.csv('output.csv', row.names=1))
 data3 <-  data3[data3$pvalue <= p_threshold_path,]
 
 
-library(ggplot2)
-
-library(scatterpie)
 
 #colnames(data3) <- c('KEGG pathway','Number of genes',"-Log2(pvalue)")
 
