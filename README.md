@@ -6,5 +6,5 @@
 # 2. Input regulated genes to DAVID database and get analysis results as shown in 'New Text Document.txt'. Replace the content in 'New Text Document.txt' by your DAVID results.
 # 3. Put your RNA-seq results in 'data.csv'
 # 4. Input peremeters in 'set parameters.csv'. 
-# 5. Run 'Install_necessary_packages.R' in the first time.
+# 5. Run 'Install_necessary_packages.R' in the first time of using the script.
 # 6. Run 'DAVID_FIG.R'.
