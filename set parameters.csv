@@ -1,6 +1,0 @@
-Parameter,Value
-Is it a log2 fold change (1 = Yes / 0 = No),0
-Threshold of log2 fold change of gene expression,0.585
-pvalue threshold of gene expression change,0.05
-pvalue threshold of pathway enrichment ,1
-Radius of pie in the figure,0.4
