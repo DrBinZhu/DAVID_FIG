@@ -14,6 +14,7 @@ fc <- parameter[2,1]
 p_threshold <- parameter[3,1]
 p_threshold_path <- parameter[4,1]
 pie_radius <- parameter[5,1]
+fontsize <- parameter[6,1]
 
 # Read DAVID info
 FILE <- list.files(pattern = '.txt')
@@ -95,7 +96,7 @@ ggplot(data3, aes(x=pvalue, y= reorder(Pathway,pvalue), size = Number))+
 
 
 p <- ggplot(data3, aes(x=pvalue, y= reorder(Pathway,pvalue), size = Number))+
-  geom_point()+
+  geom_point()+ theme(text = element_text(size = fontsize))+
   labs(x = "-Log10(pvalue)", y = "KEGG pathway", size = "Number of genes")
 p
 
