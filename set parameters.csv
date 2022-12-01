@@ -1,7 +1,0 @@
-Parameter,Value,Annotation
-IS_log_change,1,Whether it is a log fold change in your RNA-seq results. No is 0; yes is 1.
-fc,1,The threshold of the significant fold change in your RNA-seq results
-p_threshold,0.05,The threshold of the significant pvalue or adj-pvalue in your RNA-seq results
-p_threshold_path,1,The threshold of the significant pvalue in DAVID analysis results
-pie_radius,0.2,The size of pie in the resulted figure. Need to try for several times to get the best size.
-fontsize,7,set fontsize
