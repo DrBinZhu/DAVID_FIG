@@ -24,7 +24,7 @@ catogory_list = unique(data_all$V1)
 catogory_list = catogory_list[!str_detect(catogory_list, 'Annotation|Category')]
 
 for (aa in 1: length(catogory_list)) {
-  choosedata <- data[,1]== catogory_list[aa]
+  choosedata <- data_all[,1]== catogory_list[aa]
   
   if (sum(choosedata) > 1) {
     data <- data_all[data_all[,1]==catogory_list[aa],]
