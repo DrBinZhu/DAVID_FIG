@@ -114,7 +114,7 @@ for (aa in 1: length(catogory_list)) {
       q <- geom_scatterpie(aes(x=pie, y= ord, r= radius ), data=data3,cols=c('Up','Down'), legend_name = "Gene_expression")
       q
       
-      pdf(paste0('enrichment_',catogory_list[aa],'.pdf'), width = figure_width, height = figure_height)
+      pdf(paste0('enrichment_',catogory_list[aa],'.pdf'), width = figure_width, height = 0.5+nrow(data3)/5)
       print(p+q)
       dev.off()
     }
