@@ -45,7 +45,7 @@ for (aa in 1: length(catogory_list)) {
       if (IS_log_change == 0) {
         data2$fold_change <- log2(data2$fold_change)
       }
-      
+      data2$Gene_name = toupper(data2$Gene_name)
       
       PATH_NUMBER <- dim(data)[1]
       
