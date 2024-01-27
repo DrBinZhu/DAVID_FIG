@@ -85,6 +85,7 @@ for (aa in 1: length(catogory_list)) {
       write.csv(output,paste0('output_',catogory_list[aa],'.csv'))
 
       data3= as.data.frame(output)
+      data3$pvalue = as.numeric(data3$pvalue)
       data3 <-  data3[data3$pvalue <= p_threshold_path,]
       
       
